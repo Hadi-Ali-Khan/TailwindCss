@@ -84,6 +84,9 @@
             </svg>
           </button>
         </div>
+      </div>
+    </nav>
+    
         <div
           id="menu"
           class="w-full h-0 transition-all ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center"
@@ -134,8 +137,6 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
     <section
       class="flex w-full relative bg-cover h-screen bg-no-repeat items-center pl-32"
       style="background-image: url('assets/img/Hero.png')"
@@ -228,7 +229,7 @@
               src="assets/img/unsplash_6anudmpILw4.png"
             />
             <div
-              class="mx-auto justify-center items-center md:absolute cursor-pointer md:right-1/2 md:top-0 md:translate-x-3/4 md:mt-20 md:mb-44 overflow-hidden md:overflow-visible"
+              class="mx-auto justify-center items-center xl:absolute cursor-pointer xl:right-1/2 xl:top-0 xl:translate-x-3/4 xl:mt-20 xl:mb-44 overflow-hidden xl:overflow-visible"
             >
               <div class="justify-center items-center bg-blue-900 md:max-w-md">
                 <div class="container md:mx-auto pl-10 py-10 pr-14 text-center">
@@ -515,7 +516,7 @@
         </p>
         <p class="text-black">whether it’s commercial or residential.</p>
       </div>
-      <form class="max-w-lg items-center pt-6 mx-auto">
+      <form class="md:max-w-lg items-center pt-6 mx-auto">
         <div class="flex items-center flex-wrap -mx-3 mb-3">
           <div class="w-full md:w-1/2 px-3">
             <input
@@ -594,10 +595,10 @@
 
               <p class="text-black text-sm">hadi@gmail.com</p>
             </h6>
-            <a href="#" class="flex">
+            <a href="#" class="hidden md:flex">
               <img class="px-1" src="assets/img/Random Symboles 3.png" />
               <span
-                class="self-center text-xl font-bold flex font-sans text-blue-700"
+                class="hidden self-center text-xl font-bold md:flex font-sans text-blue-700"
                 >TheBox</span
               >
             </a>
@@ -653,7 +654,7 @@
           </div>
         </div>
       </div>
-      <div class="text-start pl-28 p-6 text-white bg-blue-900">
+      <div class="text-center md:text-left  md:pl-32 p-6 text-white bg-blue-900">
         <span>TheBox Company © 2022. All Rights Reserved </span>
       </div>
     </footer>
@@ -662,7 +663,7 @@
       const ulMenu = document.getElementById("ulMenu");
 
       function menuToggle() {
-        menu.classList.toggle("h-32");
+        menu.classList.toggle("h-44");
       }
 
       // Browser resize listener
@@ -673,7 +674,7 @@
         // first get the size from the window
         const window_size = window.innerWidth || document.body.clientWidth;
         if (window_size > 640) {
-          menu.classList.remove("h-32");
+          menu.classList.remove("h-44");
         }
       }
     </script>
